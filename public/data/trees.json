@@ -1,0 +1,527 @@
+[
+  {
+    "id": "mango",
+    "icon": "🥭",
+    "name": "Mango",
+    "category": "frutal",
+    "harvestTime": "3–5 años",
+    "description": "El rey de las frutas tropicales. Resistente, productivo y amado en toda Colombia. Se adapta desde el Caribe hasta valles interandinos con temperaturas de 24–30 °C.",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Preparación",
+        "icon": "🌱",
+        "title": "Preparación del terreno y selección de semilla",
+        "metrics": [
+          { "label": "Temperatura ideal", "value": "24–30 °C" },
+          { "label": "Altitud", "value": "0–1.200 msnm" },
+          { "label": "pH del suelo", "value": "5.5–7.0" },
+          { "label": "Lluvia anual", "value": "750–2.500 mm" }
+        ],
+        "tips": [
+          "Elija variedades injertadas como Tommy Atkins, Keitt o Azúcar para garantizar calidad y precocidad.",
+          "Realice análisis de suelo antes de sembrar: busca suelos francos, bien drenados y con materia orgánica mayor al 3%.",
+          "Prepare hoyos de 60×60×60 cm con un mes de anticipación para que la tierra se aireé correctamente.",
+          "Mezcle la tierra extraída con 10 kg de abono orgánico maduro y 100 g de cal dolomita si el pH está bajo 5.5.",
+          "Deje descansar el terreno al menos 15 días tras la preparación antes de sembrar."
+        ],
+        "alert": "Evite terrenos con encharcamiento o arcillas pesadas. El mango es muy sensible a la asfixia radicular."
+      },
+      {
+        "id": 2,
+        "label": "Siembra",
+        "icon": "🌿",
+        "title": "Siembra y establecimiento del árbol",
+        "metrics": [
+          { "label": "Distancia entre plantas", "value": "8–10 m" },
+          { "label": "Distancia entre filas", "value": "8–10 m" },
+          { "label": "Profundidad de siembra", "value": "40–50 cm" },
+          { "label": "Época ideal", "value": "Inicio de lluvias" }
+        ],
+        "tips": [
+          "Siembre al inicio de la temporada de lluvias para reducir el riego manual durante el establecimiento.",
+          "Coloque el árbol injertado dejando el punto de injerto 10 cm por encima del nivel del suelo.",
+          "Riegue abundantemente en el momento de la siembra (20 litros por hoyo) para eliminar bolsas de aire.",
+          "Instale tutores de madera o caña para proteger el árbol joven de vientos fuertes durante los primeros 6 meses.",
+          "Aplique una capa de mulch (cascarilla de arroz, paja seca) de 10 cm alrededor del árbol para conservar humedad."
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Cuidados",
+        "icon": "💧",
+        "title": "Cuidados durante el crecimiento",
+        "metrics": [
+          { "label": "Riego en época seca", "value": "20–30 L/semana" },
+          { "label": "Fertilización", "value": "Cada 3 meses" },
+          { "label": "Poda de formación", "value": "Año 1 y 2" },
+          { "label": "Control fitosanitario", "value": "Mensual" }
+        ],
+        "tips": [
+          "Los primeros 2 años, riegue 2 veces por semana en verano (20 litros por árbol).",
+          "Fertilice con NPK 15-15-15 a razón de 100 g por árbol el primer año, duplique a partir del segundo año.",
+          "Realice poda de formación eliminando ramas que crecen hacia el centro para dar forma de copa abierta.",
+          "Controle la antracnosis (manchas negras en frutos) aplicando fungicidas cúpricos preventivos antes de la floración.",
+          "Elimine malezas en un radio de 1 metro alrededor del árbol para reducir competencia y plagas."
+        ],
+        "alert": "La mosca de la fruta (Ceratitis capitata) es la plaga más dañina. Use trampas con proteína hidrolizada desde la floración."
+      },
+      {
+        "id": 4,
+        "label": "Cosecha",
+        "icon": "🧺",
+        "title": "Cosecha y postcosecha",
+        "metrics": [
+          { "label": "Primera cosecha", "value": "3–5 años" },
+          { "label": "Producción adulto", "value": "100–200 kg/árbol/año" },
+          { "label": "Madurez fisiológica", "value": "100–130 días" },
+          { "label": "Vida en frío", "value": "2–3 semanas a 10 °C" }
+        ],
+        "tips": [
+          "Coseche cuando el fruto cambie de color verde oscuro a verde amarillento o empiece a brotar manchas rosadas según la variedad.",
+          "Use tijeras de cosecha limpias y desinfectadas. Deje 2–3 cm de pedúnculo para evitar pudrición.",
+          "No permita que los mangos caigan al suelo: los golpes aceleran la maduración y favorecen hongos.",
+          "Seleccione los frutos por tamaño y elimine los dañados. Empaque en cajas con separadores para transporte.",
+          "Para consumo en fresco local, coseche con madurez de ¾; para exportación, en madurez fisiológica completa."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aguacate",
+    "icon": "🥑",
+    "name": "Aguacate",
+    "category": "frutal",
+    "harvestTime": "3–4 años",
+    "description": "El \"oro verde\" de Colombia. La variedad Hass domina los mercados mundiales. Requiere clima fresco de montaña entre 1.500 y 2.200 msnm para máxima calidad.",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Preparación",
+        "icon": "🌱",
+        "title": "Selección del lote y preparación del suelo",
+        "metrics": [
+          { "label": "Altitud ideal (Hass)", "value": "1.500–2.200 msnm" },
+          { "label": "Temperatura", "value": "15–25 °C" },
+          { "label": "pH óptimo", "value": "5.5–6.5" },
+          { "label": "Pendiente máxima", "value": "30%" }
+        ],
+        "tips": [
+          "Elija la variedad Hass para mercado de exportación o Lorena/Trinidad para consumo nacional.",
+          "El aguacate necesita suelos profundos (mínimo 80 cm), francos a franco-arenosos, con excelente drenaje.",
+          "Realice subsolado a 60 cm de profundidad si el terreno tiene capas endurecidas (piso de arado).",
+          "Aplique enmiendas orgánicas (compost, lombricompost) incorporadas al suelo 30 días antes de sembrar.",
+          "Instale sistema de drenaje superficial con zanjas perimetrales si el lote tiene tendencia a acumular agua."
+        ],
+        "alert": "La Phytophthora cinnamomi (pudrición de raíz) destruye plantaciones enteras en suelos mal drenados. El drenaje es lo más importante."
+      },
+      {
+        "id": 2,
+        "label": "Siembra",
+        "icon": "🌿",
+        "title": "Trasplante y establecimiento",
+        "metrics": [
+          { "label": "Distancia Hass", "value": "7×7 m (204 árboles/ha)" },
+          { "label": "Tamaño del hoyo", "value": "60×60×60 cm" },
+          { "label": "Edad del almácigo", "value": "6–8 meses" },
+          { "label": "Época de siembra", "value": "Inicio lluvias" }
+        ],
+        "tips": [
+          "Compre almácigos certificados libres de Phytophthora. Nunca plante material de origen desconocido.",
+          "Siembre en días nublados o a últimas horas de la tarde para reducir estrés hídrico en el trasplante.",
+          "El punto de injerto debe quedar 15 cm sobre el nivel del suelo para evitar infecciones por salpique.",
+          "Instale riego por goteo desde el inicio: el aguacate no tolera ni déficit ni exceso de agua.",
+          "Coloque palma o sarán al 50% sobre los árboles recién sembrados durante los primeros 60 días."
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Cuidados",
+        "icon": "💧",
+        "title": "Manejo agronómico del cultivo",
+        "metrics": [
+          { "label": "Riego por goteo", "value": "40–60 L/árbol/día (verano)" },
+          { "label": "Fertilización foliar", "value": "Cada 21 días" },
+          { "label": "Poda sanitaria", "value": "2 veces/año" },
+          { "label": "Polinización cruzada", "value": "Siembra tipo A + B" }
+        ],
+        "tips": [
+          "Plante en una proporción 4:1 (4 árboles tipo A por 1 tipo B) para mejorar la polinización cruzada.",
+          "Fertilice con énfasis en potasio y boro durante la floración y llenado de fruto para mejorar calidad.",
+          "Controle el trips californiano (Scirtothrips perseae) con aceites vegetales o insecticidas sistémicos.",
+          "Realice monitoreo mensual de Phytophthora revisando el cuello de la raíz y corteza baja del tronco.",
+          "La poda de formación debe dejar el árbol con 3–4 ramas principales a 60–80 cm del suelo."
+        ],
+        "alert": "Nunca deje el suelo completamente seco entre riegos. El aguacate Hass pierde flores y frutos pequeños con estrés hídrico."
+      },
+      {
+        "id": 4,
+        "label": "Cosecha",
+        "icon": "🧺",
+        "title": "Índices de cosecha y manejo postcosecha",
+        "metrics": [
+          { "label": "Primera cosecha", "value": "3–4 años" },
+          { "label": "Rendimiento adulto", "value": "20–40 ton/ha/año" },
+          { "label": "Materia seca Hass", "value": "> 21% para cosechar" },
+          { "label": "Temperatura de frío", "value": "5–7 °C" }
+        ],
+        "tips": [
+          "El índice de cosecha del Hass es el contenido de materia seca: mida con balanza húmedo/seco en microondas.",
+          "Coseche con gancho o varas telescópicas con bolsa acolchada. Nunca permita caída al suelo.",
+          "Limpie y clasifique los frutos por tamaño (calibres internacionales: 10, 12, 14, 16, 20, 24).",
+          "Aplique recubrimientos de cera o aceite de coco para extender vida en anaquel.",
+          "El aguacate madura después de cosechar: acelere con etileno a 20 °C o retrase refrigerado a 5 °C."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "platano",
+    "icon": "🍌",
+    "name": "Plátano",
+    "category": "tropical",
+    "harvestTime": "9–12 meses",
+    "description": "Alimento base de millones de colombianos y venezolanos. De rápido retorno económico, el plátano Dominico-Hartón lidera la producción en el Eje Cafetero y los Llanos.",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Preparación",
+        "icon": "🌱",
+        "title": "Preparación del terreno y selección de colino",
+        "metrics": [
+          { "label": "Temperatura ideal", "value": "18–27 °C" },
+          { "label": "Altitud máxima", "value": "1.800 msnm" },
+          { "label": "pH del suelo", "value": "5.5–7.0" },
+          { "label": "Lluvia mínima", "value": "1.500 mm/año" }
+        ],
+        "tips": [
+          "Seleccione colinos (hijos espada) de plantas madres vigorosas, libres de síntomas de moko o sigatoka.",
+          "Limpie y descoline el colino dejando solo la base con la cabeza grande y raíces sanas.",
+          "Trate el colino con fungicida + insecticida sistémico sumergiéndolo 15 minutos antes de sembrar.",
+          "Prepare el terreno con dos pases de rastro perpendiculares para incorporar rastrojos y aflojar el suelo.",
+          "Haga un análisis foliar en la primera producción para ajustar el programa de fertilización."
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Siembra",
+        "icon": "🌿",
+        "title": "Siembra del colino y densidad de plantación",
+        "metrics": [
+          { "label": "Sistema tresbolillo", "value": "2×2×2 m (1.666 plantas/ha)" },
+          { "label": "Tamaño del hoyo", "value": "40×40×40 cm" },
+          { "label": "Profundidad de siembra", "value": "20–25 cm" },
+          { "label": "Orientación surcos", "value": "Norte-Sur para sol" }
+        ],
+        "tips": [
+          "Oriente los surcos de norte a sur para maximizar la captación solar en ambos lados de la hoja.",
+          "Siembre el colino con el lado plano hacia el sol de la tarde para que los hijos salgan hacia el corredor.",
+          "Cubra el colino con tierra suelta y firme ligeramente sin compactar. No entierre la yema central.",
+          "Aplique 200 g de cal dolomita y 100 g de DAP en el fondo del hoyo antes de colocar el colino.",
+          "Establezca cobertura vegetal entre surcos con leguminosas (Arachis pintoi) para reducir erosión."
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Cuidados",
+        "icon": "💧",
+        "title": "Manejo de la plantación",
+        "metrics": [
+          { "label": "Deshije mensual", "value": "Dejar 1 hijo activo" },
+          { "label": "Fertilización", "value": "Cada 60 días" },
+          { "label": "Deshoje sanitario", "value": "Quincenal" },
+          { "label": "Encalipado", "value": "A los 4–5 meses" }
+        ],
+        "tips": [
+          "Realice deshije mensual dejando solo el hijo más vigoroso. El sistema madre-hija-nieta garantiza cosechas continuas.",
+          "Fertilice con 400 g de urea + 300 g de KCl por planta cada 2 meses durante todo el ciclo.",
+          "El deshoje sanitario elimina hojas con sigatoka negra (Mycosphaerella fijiensis). Corte y queme las hojas afectadas.",
+          "Encalipe el racimo con bolsa azul perforada cuando la bellota esté completamente abierta para proteger de insectos.",
+          "Coloque anillas de papel aluminio en el seudotallo para impedir el ascenso de cucarrones hacia el racimo."
+        ],
+        "alert": "La sigatoka negra puede destruir el follaje en 3 semanas. Aplique fungicidas sistémicos (propiconazol) en rotación con mancozeb."
+      },
+      {
+        "id": 4,
+        "label": "Cosecha",
+        "icon": "🧺",
+        "title": "Corte y manejo del racimo",
+        "metrics": [
+          { "label": "Primera cosecha", "value": "9–12 meses" },
+          { "label": "Ciclos continuos", "value": "Indefinidos si hay manejo" },
+          { "label": "Peso del racimo", "value": "20–45 kg" },
+          { "label": "Grado de corte", "value": "¾ de llenado (8 semanas)" }
+        ],
+        "tips": [
+          "Corte el racimo cuando los dedos llenen ¾ de su circunferencia. La herramienta debe estar desinfectada.",
+          "Use la técnica del doblay: doble el seudotallo antes de cortar para bajar el racimo con suavidad.",
+          "Transporte los racimos en posición invertida (flor abajo) y protegidos con esponja o hoja de plátano.",
+          "Limpie los dedos con agua limpia y cloro al 1% para eliminar látex y bacterias antes de empacar.",
+          "Selle las manos en cajas con papel periódico y papel film para conservar la cadena de frío durante el transporte."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cacao",
+    "icon": "🍫",
+    "name": "Cacao",
+    "category": "cacao",
+    "harvestTime": "2–3 años",
+    "description": "El cacao colombiano de alta calidad es reconocido mundialmente. Las variedades Trinitario y Fino de Aroma abren mercados gourmet. Cultivo de alto potencial en el Catatumbo y Urabá.",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Preparación",
+        "icon": "🌱",
+        "title": "Establecimiento del sistema agroforestal",
+        "metrics": [
+          { "label": "Temperatura", "value": "22–28 °C" },
+          { "label": "Humedad relativa", "value": "70–90%" },
+          { "label": "Sombra necesaria", "value": "30–40% al establecer" },
+          { "label": "Altitud", "value": "0–800 msnm" }
+        ],
+        "tips": [
+          "El cacao necesita sombra temporal los primeros 2 años: establezca plátano o banano como sombrío transitorio.",
+          "Siembre árboles maderables (cedro, nogal, caucho) como sombrío permanente a 12×12 m antes del cacao.",
+          "Use clones certificados: CCN-51 para alta producción, o IMC-67/TSH-565 para calidad fina de aroma.",
+          "El suelo debe ser rico en materia orgánica (> 4%) con buen drenaje: el cacao no tolera encharcamientos.",
+          "Realice calicatas de 1 metro para verificar que no hay capas impermeables ni nivel freático alto."
+        ],
+        "alert": "El cacao es muy sensible a la radiación solar directa durante los primeros 2 años. Sin sombra, las hojas se queman y las plantas mueren."
+      },
+      {
+        "id": 2,
+        "label": "Siembra",
+        "icon": "🌿",
+        "title": "Trasplante de clones injertados",
+        "metrics": [
+          { "label": "Distancia de siembra", "value": "3×3 m (1.100 árboles/ha)" },
+          { "label": "Edad almácigo", "value": "3–4 meses" },
+          { "label": "Tamaño del hoyo", "value": "40×40×40 cm" },
+          { "label": "Sombrío temporal", "value": "Plátano a 1,5×1,5 m" }
+        ],
+        "tips": [
+          "Riegue el almácigo la noche anterior al trasplante para que el pan de tierra salga compacto e íntegro.",
+          "Retire la bolsa plástica con cuidado y siembre sin romper el pan de tierra para no dañar las raíces.",
+          "Aplique 200 g de micorrizas en el hoyo de siembra para estimular el desarrollo radicular desde el inicio.",
+          "Instale riego por aspersión o goteo desde el primer mes: el cacao requiere humedad uniforme todo el año.",
+          "Encale el tronco hasta 60 cm de altura con cal apagada para prevenir el ataque de Phytophthora palmivora."
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Cuidados",
+        "icon": "💧",
+        "title": "Manejo fitosanitario y podas",
+        "metrics": [
+          { "label": "Poda de mantenimiento", "value": "Cada 6 meses" },
+          { "label": "Fertilización", "value": "4 veces/año" },
+          { "label": "Monitoreo Monilia", "value": "Semanal" },
+          { "label": "Cosecha sanitaria", "value": "Quincenal" }
+        ],
+        "tips": [
+          "La Monilia (Moniliophthora roreri) es la plaga más dañina: haga cosecha sanitaria quincenal retirando mazorcas enfermas.",
+          "Pinte los cortes de poda con pasta bordelesa (cobre + cal) para evitar pudrición del tejido vegetal.",
+          "Fertilice con gallinaza madura (5 kg/árbol) + fertilizantes sintéticos en la época de mayor lluvia.",
+          "La escoba de bruja (Moniliophthora perniciosa) produce escobas verdes en brotes y flores: elimínelas semanalmente.",
+          "Regule la sombra del sistema agroforestal para mantener 30% de sombra en árboles adultos en producción."
+        ],
+        "alert": "Las mazorcas enfermas con Monilia deben enterrarse a 30 cm de profundidad o quemarse. Nunca dejarlas en el suelo: reinocularán la plantación."
+      },
+      {
+        "id": 4,
+        "label": "Cosecha",
+        "icon": "🧺",
+        "title": "Cosecha, fermentación y secado",
+        "metrics": [
+          { "label": "Primera cosecha", "value": "18–24 meses" },
+          { "label": "Producción adulta", "value": "1,5–2 ton cacao seco/ha" },
+          { "label": "Fermentación", "value": "5–7 días" },
+          { "label": "Humedad de venta", "value": "< 7%" }
+        ],
+        "tips": [
+          "Cosecha las mazorcas maduras (color amarillo, rojo o naranja según el clon) con machete bien afilado.",
+          "Acumule mazorcas de 3–5 días máximo antes de partir. Parta el mismo día de cosecha idealmente.",
+          "Fermente en cajones de madera de laurel o cedro: 3 días con volteos cada 24 h para cacao Forastero.",
+          "Para cacao Fino de Aroma (Trinitario), fermente 5–7 días con volteos cada 48 horas para desarrollar aromas.",
+          "Seque en marquesinas solares hasta 7% de humedad. Revuelva cada 2 horas para secado uniforme."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "citricos",
+    "icon": "🍊",
+    "name": "Cítricos",
+    "category": "frutal",
+    "harvestTime": "2–4 años",
+    "description": "Naranja Valencia, limón Tahití y mandarina Arrayana. Los cítricos son el segundo cultivo frutal de Colombia. Versátiles para jugo o consumo fresco, con excelente mercado nacional.",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Preparación",
+        "icon": "🌱",
+        "title": "Preparación y selección del patrón",
+        "metrics": [
+          { "label": "Temperatura", "value": "15–35 °C" },
+          { "label": "Altitud", "value": "0–1.500 msnm" },
+          { "label": "pH del suelo", "value": "5.5–7.0" },
+          { "label": "Drenaje", "value": "Indispensable" }
+        ],
+        "tips": [
+          "Elija el patrón (portainjerto) según el suelo: Citrange Troyer para suelos fértiles, Citrumelo para ácidos.",
+          "Compre material injertado certificado por el ICA para garantizar libre de tristeza (CTV) y Huanglongbing (HLB).",
+          "El terreno debe tener pendiente suave (2–5%) para facilitar el drenaje natural sin erosión.",
+          "Incorpore 15–20 toneladas de materia orgánica por hectárea mediante compostaje o abono verde.",
+          "Instale riego por goteo antes de sembrar: los cítricos necesitan 30–40 litros por árbol por semana en verano."
+        ],
+        "alert": "El Huanglongbing (HLB) o 'dragón amarillo' es letal e incurable. Nunca traslade material vegetal de zonas afectadas sin certificación del ICA."
+      },
+      {
+        "id": 2,
+        "label": "Siembra",
+        "icon": "🌿",
+        "title": "Trasplante y tutoreo",
+        "metrics": [
+          { "label": "Naranja Valencia", "value": "6×6 m (277 árboles/ha)" },
+          { "label": "Limón Tahití", "value": "5×5 m (400 árboles/ha)" },
+          { "label": "Mandarina", "value": "5×4 m (500 árboles/ha)" },
+          { "label": "Profundidad hoyo", "value": "60×60×60 cm" }
+        ],
+        "tips": [
+          "Riegue el almácigo abundantemente 24 horas antes del trasplante para facilitar la extracción sin dañar raíces.",
+          "El cuello de la raíz debe quedar al nivel del suelo o 5 cm por encima para evitar pudriciones.",
+          "Instale tutores de guadua o estacón de eucalipto de 1,5 m atados con cinta de tela (no alambre).",
+          "Construya plateo circular de 1 metro de diámetro alrededor del árbol para aplicar riegos y fertilizantes.",
+          "Siembre plantas de cobertura entre filas (Arachis pintoi, Brachiaria humidícola) para manejo de suelo."
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Cuidados",
+        "icon": "💧",
+        "title": "Fertilización y control fitosanitario",
+        "metrics": [
+          { "label": "Fertilización edáfica", "value": "Cada 4 meses" },
+          { "label": "Fertilización foliar", "value": "Cada 30 días" },
+          { "label": "Poda de aclareo", "value": "Anual (enero–febrero)" },
+          { "label": "Monitoreo psílido", "value": "Semanal" }
+        ],
+        "tips": [
+          "Aplique Zn, Mn y Fe foliarmente en la brotación nueva para prevenir deficiencias en suelos neutros a alcalinos.",
+          "Controle el psílido asiático (Diaphorina citri), vector del HLB, con aceite de neem en brotaciones nuevas.",
+          "La minadora de la hoja (Phyllocnistis citrella) daña brotes: aplique aceite parafínico al 1% en brotaciones.",
+          "Poda de aclareo anual: elimine ramas cruzadas, secas o con síntomas de gomosis (resina amarilla en la corteza).",
+          "El limón Tahití es más vigoroso y productivo sin polinización cruzada. La naranja necesita polinizadores (abejas)."
+        ]
+      },
+      {
+        "id": 4,
+        "label": "Cosecha",
+        "icon": "🧺",
+        "title": "Índices de cosecha y clasificación",
+        "metrics": [
+          { "label": "Primera cosecha", "value": "2–4 años según especie" },
+          { "label": "Naranja Valencia", "value": "15–20 ton/ha/año" },
+          { "label": "Limón Tahití", "value": "20–30 ton/ha/año" },
+          { "label": "Acidez mínima para venta", "value": "< 1,5% ácido cítrico" }
+        ],
+        "tips": [
+          "La naranja está lista cuando alcanza el índice de madurez (sólidos solubles / acidez) de 8:1 o superior.",
+          "El limón Tahití se cosecha verde (150–160 días tras floración): la piel debe estar firme y de color verde brillante.",
+          "Use tijeras de cosecha en ángulo de 45°. Deje el pedúnculo de 0,5 cm para reducir pudriciones.",
+          "Lave con agua clorada (150 ppm), clasifique por tamaño y aplique cera de carnauba para exportación.",
+          "Almacene a 10–12 °C con 90–95% de humedad relativa: vida útil de 4–6 semanas."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "guanabana",
+    "icon": "🌿",
+    "name": "Guanábana",
+    "category": "tropical",
+    "harvestTime": "2–3 años",
+    "description": "La guanábana (Annona muricata) es uno de los sabores más apreciados del trópico colombo-venezolano. Ideal para jugos, helados y pulpa congelada. Crece bien en zonas cálidas hasta 1.000 msnm.",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Preparación",
+        "icon": "🌱",
+        "title": "Selección del sitio y preparación",
+        "metrics": [
+          { "label": "Temperatura", "value": "20–30 °C" },
+          { "label": "Altitud máxima", "value": "1.000 msnm" },
+          { "label": "pH del suelo", "value": "6.0–7.0" },
+          { "label": "Lluvia anual", "value": "1.000–2.000 mm" }
+        ],
+        "tips": [
+          "La guanábana prefiere suelos francos, bien drenados y ricos en materia orgánica (> 3% de MO).",
+          "Evite zonas con heladas o vientos fuertes: la planta es muy sensible al frío y al viento.",
+          "Prepare hoyos de 50×50×50 cm con mezcla de tierra negra + compost maduro en proporción 3:1.",
+          "Aplique 500 g de cal dolomita por hoyo si el pH está por debajo de 6.0.",
+          "Instale cortinas rompevientos con árboles de rápido crecimiento si el lote está expuesto a vientos."
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Siembra",
+        "icon": "🌿",
+        "title": "Siembra y establecimiento",
+        "metrics": [
+          { "label": "Distancia de siembra", "value": "5×5 m (400 árboles/ha)" },
+          { "label": "Tamaño del hoyo", "value": "50×50×50 cm" },
+          { "label": "Edad del almácigo", "value": "4–6 meses" },
+          { "label": "Época ideal", "value": "Inicio de lluvias" }
+        ],
+        "tips": [
+          "Use almácigos injertados o de semilla seleccionada de árboles con alta producción y frutos grandes.",
+          "Siembre en la tarde o días nublados para reducir estrés por radiación solar en el trasplante.",
+          "Aplique mulch de cascarilla o paja alrededor del árbol en un radio de 1 metro para conservar humedad.",
+          "Riegue 15 litros inmediatamente después de sembrar para eliminar bolsas de aire alrededor de las raíces.",
+          "Instale tutor de guadua de 1,5 m para protección de viento durante el primer año."
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Cuidados",
+        "icon": "💧",
+        "title": "Manejo del cultivo",
+        "metrics": [
+          { "label": "Riego en verano", "value": "20–30 L/árbol/semana" },
+          { "label": "Fertilización", "value": "Cada 3 meses" },
+          { "label": "Polinización manual", "value": "6–10 a.m. cada flor" },
+          { "label": "Poda de formación", "value": "Año 1 y 2" }
+        ],
+        "tips": [
+          "La guanábana tiene baja eficiencia de polinización natural. Haga polinización manual con pincel a las 6–10 a.m.",
+          "Recoja el polen de flores en fase masculina (día 2) y aplíquelo a flores en fase femenina (día 1, noche).",
+          "Fertilice con abono completo 10-30-10 al inicio (favorece raíz), luego 15-15-15 para producción.",
+          "Controle el taladrador del tronco (Cerambycidae) inyectando insecticida en los orificios de entrada.",
+          "Envuelva los frutos en bolsas de papel o tela cuando alcanzan el tamaño de un huevo para protegerlos."
+        ],
+        "alert": "La antracnosis (Colletotrichum gloeosporioides) mancha y pudre la cáscara. Aplique fungicidas cúpricos tras cada lluvia fuerte."
+      },
+      {
+        "id": 4,
+        "label": "Cosecha",
+        "icon": "🧺",
+        "title": "Cosecha y manejo del fruto",
+        "metrics": [
+          { "label": "Primera cosecha", "value": "2–3 años" },
+          { "label": "Peso del fruto", "value": "0,5–3 kg" },
+          { "label": "Rendimiento", "value": "10–20 ton/ha/año" },
+          { "label": "Vida en anaquel", "value": "3–5 días a 15 °C" }
+        ],
+        "tips": [
+          "Cosecha cuando la cáscara cambia de verde oscuro brillante a verde amarillento mate y cede ligeramente a la presión.",
+          "Corte con tijera o cuchillo limpio dejando el pedúnculo completo para reducir la entrada de hongos.",
+          "La guanábana es muy perecedera: no soporta cadena de frío muy baja. Almacene a 12–15 °C máximo.",
+          "Procese en pulpa congelada (IQF) para alargar la vida útil a 12 meses y acceder a mercados de jugos.",
+          "Un árbol adulto puede producir 30–60 frutos por año. Escalone la cosecha visitando el lote 2 veces por semana."
+        ]
+      }
+    ]
+  }
+]

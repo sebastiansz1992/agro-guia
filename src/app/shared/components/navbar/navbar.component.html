@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="navbar__container">
+    <a class="navbar__brand" routerLink="/" (click)="closeMenu()">
+      <span class="navbar__logo-icon">🌿</span>
+      <span class="navbar__logo-text">AgroGuía <span class="navbar__logo-sub">Tropical</span></span>
+    </a>
+
+    <button
+      class="navbar__burger"
+      [class.is-active]="menuOpen()"
+      (click)="toggleMenu()"
+      aria-label="Abrir menú"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar__menu" [class.is-open]="menuOpen()">
+      <a
+        class="navbar__link"
+        routerLink="/"
+        routerLinkActive="is-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()"
+      >🏠 Inicio</a>
+
+    </div>
+  </div>
+</nav>

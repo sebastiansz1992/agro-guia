@@ -1,0 +1,14 @@
+<a class="tree-card" [routerLink]="['/arbol', tree.id]" [class]="'tree-card--' + tree.category" aria-label="Ver guía de {{ tree.name }}">
+  <div class="tree-card__icon">{{ tree.icon }}</div>
+  <div class="tree-card__body">
+    <span class="tree-card__badge">{{ tree.category }}</span>
+    <h3 class="tree-card__name">{{ tree.name }}</h3>
+    <p class="tree-card__description">{{ tree.description }}</p>
+    <div class="tree-card__footer">
+      <span class="tree-card__harvest">
+        🕐 Primera cosecha: <strong>{{ tree.harvestTime }}</strong>
+      </span>
+      <span class="tree-card__cta">Ver guía →</span>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,79 @@
+<app-navbar />
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg-pattern" aria-hidden="true"></div>
+  <div class="hero__container">
+    <div class="hero__content">
+      <span class="hero__kicker">🌿 Guía agrícola para el trópico</span>
+      <h1 class="hero__title">Siembra con sabiduría</h1>
+      <p class="hero__subtitle">
+        Aprende a cultivar los árboles frutales tropicales más importantes de Colombia.
+        Guías paso a paso creadas por ingenieros agrónomos, ahora al alcance de tu mano.
+      </p>
+      <div class="hero__actions">
+        <a href="#arboles" class="btn btn--primary">Ver guías de cultivo →</a>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__icons">
+        <span>🥭</span><span>🥑</span><span>🍌</span>
+        <span>🍫</span><span>🍊</span><span>🌿</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁRBOLES -->
+<section class="trees-section" id="arboles">
+  <div class="section-container">
+    <h2 class="section-title">Guías de cultivo</h2>
+    <p class="section-subtitle">Selecciona el árbol que quieres cultivar y sigue la guía completa</p>
+
+    <!-- Filtros -->
+    <div class="filters" role="group" aria-label="Filtrar por categoría">
+      @for (f of filters; track f.value) {
+        <button
+          class="filter-btn"
+          [class.is-active]="activeFilter() === f.value"
+          (click)="setFilter(f.value)"
+        >{{ f.icon }} {{ f.label }}</button>
+      }
+    </div>
+
+    <!-- Grid de árboles -->
+    <div class="trees-grid">
+      @for (tree of filteredTrees(); track tree.id) {
+        <app-tree-card [tree]="tree" />
+      }
+      @if (filteredTrees().length === 0 && trees().length > 0) {
+        <p class="trees-empty">No hay árboles en esta categoría.</p>
+      }
+      @if (trees().length === 0) {
+        <p class="trees-empty">Cargando guías...</p>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="how-section">
+  <div class="section-container">
+    <h2 class="section-title">¿Cómo funciona?</h2>
+    <div class="how-grid">
+      @for (step of howItWorks; track step.title; let i = $index) {
+        <div class="how-card">
+          <div class="how-card__number">{{ i + 1 }}</div>
+          <div class="how-card__icon">{{ step.icon }}</div>
+          <h3 class="how-card__title">{{ step.title }}</h3>
+          <p class="how-card__desc">{{ step.desc }}</p>
+        </div>
+      }
+    </div>
+    <div class="how-cta">
+      <a href="#arboles" class="btn btn--primary">🌱 Comenzar ahora</a>
+    </div>
+  </div>
+</section>
+
+<app-footer />

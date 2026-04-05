@@ -1,0 +1,257 @@
+/* ─── Hero ─────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  overflow: hidden;
+  color: #fff;
+
+  &__bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 C20 15 10 25 20 35 C30 45 40 35 30 25 C20 15 30 5 30 5Z' fill='rgba(255,255,255,0.06)'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+  }
+
+  &__container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  &__kicker {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  &__subtitle {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    opacity: 0.9;
+    max-width: 520px;
+    margin: 0 0 2rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    font-size: 2.5rem;
+    opacity: 0.85;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.12);
+      border-radius: 12px;
+      width: 64px;
+      height: 64px;
+      backdrop-filter: blur(4px);
+    }
+  }
+}
+
+/* ─── Buttons ───────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.15s;
+
+  &:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  &--primary {
+    background: var(--color-accent);
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(186, 117, 23, 0.35);
+  }
+
+  &--outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255,255,255,0.7);
+
+    &:hover { background: rgba(255,255,255,0.1); }
+  }
+}
+
+/* ─── Trees section ─────────────────────────────────────── */
+.trees-section {
+  background: var(--color-surface);
+  padding: 4rem 0;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: var(--color-primary);
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin: 0 0 2rem;
+  font-size: 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.45rem 1.1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 25px;
+  background: var(--color-card);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover {
+    border-color: var(--color-primary-light);
+    color: var(--color-primary);
+  }
+
+  &.is-active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+  }
+}
+
+.trees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.trees-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 3rem;
+  font-size: 1.1rem;
+}
+
+/* ─── How it works ──────────────────────────────────────── */
+.how-section {
+  background: var(--color-primary-xlight);
+  padding: 4rem 0;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.how-card {
+  background: var(--color-card);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(59, 109, 17, 0.07);
+  position: relative;
+
+  &__number {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 28px;
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+  &__title {
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    margin: 0 0 0.6rem;
+  }
+
+  &__desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+.how-cta {
+  text-align: center;
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    &__container {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.25rem;
+      gap: 2rem;
+    }
+
+    &__visual { display: none; }
+  }
+}

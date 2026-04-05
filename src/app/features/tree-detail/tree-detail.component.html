@@ -1,0 +1,119 @@
+<app-navbar />
+
+@if (tree(); as t) {
+  <main class="detail">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="breadcrumb__container">
+        <a routerLink="/" class="breadcrumb__link">🏠 Inicio</a>
+        <span class="breadcrumb__sep">›</span>
+        <span class="breadcrumb__current">{{ t.name }}</span>
+      </div>
+    </div>
+
+    <!-- Header del árbol -->
+    <header class="tree-header" [class]="'tree-header--' + t.category">
+      <div class="tree-header__container">
+        <span class="tree-header__icon">{{ t.icon }}</span>
+        <div class="tree-header__info">
+          <span class="tree-header__badge">{{ t.category }}</span>
+          <h1 class="tree-header__name">{{ t.name }}</h1>
+          <p class="tree-header__desc">{{ t.description }}</p>
+          <span class="tree-header__harvest">🕐 Primera cosecha: <strong>{{ t.harvestTime }}</strong></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stepper -->
+    <div class="stepper-wrapper">
+      <div class="stepper">
+        @for (step of t.steps; track step.id; let i = $index) {
+          <button
+            class="stepper__item"
+            [class.is-active]="activeStepIndex() === i"
+            [class.is-done]="activeStepIndex() > i"
+            (click)="goToStep(i)"
+            [attr.aria-current]="activeStepIndex() === i ? 'step' : null"
+          >
+            <span class="stepper__icon">{{ step.icon }}</span>
+            <span class="stepper__label">{{ step.label }}</span>
+          </button>
+        }
+      </div>
+    </div>
+
+    <!-- Panel del paso activo -->
+    @if (activeStep(); as step) {
+      <section class="step-panel">
+        <div class="step-panel__container">
+          <h2 class="step-panel__title">{{ step.icon }} {{ step.title }}</h2>
+
+          <!-- Alerta -->
+          @if (step.alert) {
+            <div class="step-alert" role="alert">
+              <span class="step-alert__icon">⚠️</span>
+              <p>{{ step.alert }}</p>
+            </div>
+          }
+
+          <!-- Métricas -->
+          @if (step.metrics.length > 0) {
+            <div class="metrics-section">
+              <h3 class="metrics-section__heading">Parámetros clave</h3>
+              <div class="metrics-grid">
+                @for (metric of step.metrics; track metric.label) {
+                  <div class="metric-card">
+                    <span class="metric-card__label">{{ metric.label }}</span>
+                    <span class="metric-card__value">{{ metric.value }}</span>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+
+          <!-- Consejos -->
+          @if (step.tips.length > 0) {
+            <div class="tips-section">
+              <h3 class="tips-section__heading">Consejos prácticos</h3>
+              <ul class="tips-list">
+                @for (tip of step.tips; track tip) {
+                  <li class="tips-list__item">
+                    <span class="tips-list__icon" aria-hidden="true">✅</span>
+                    <p>{{ tip }}</p>
+                  </li>
+                }
+              </ul>
+            </div>
+          }
+
+          <!-- Navegación de pasos -->
+          <div class="step-nav">
+            <button
+              class="step-nav__btn step-nav__btn--prev"
+              (click)="prevStep()"
+              [disabled]="isFirst()"
+              aria-label="Paso anterior"
+            >← Anterior</button>
+
+            <span class="step-nav__counter">Paso {{ activeStepIndex() + 1 }} de {{ t.steps.length }}</span>
+
+            <button
+              class="step-nav__btn step-nav__btn--next"
+              (click)="nextStep()"
+              [disabled]="isLast()"
+              aria-label="Siguiente paso"
+            >Siguiente →</button>
+          </div>
+        </div>
+      </section>
+    }
+
+  </main>
+} @else {
+  <div class="not-found">
+    <p>Árbol no encontrado.</p>
+    <a routerLink="/" class="btn btn--primary">Volver al inicio</a>
+  </div>
+}
+
+<app-footer />
