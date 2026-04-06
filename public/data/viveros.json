@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vivero-el-paraiso",
+    "name": "Vivero El Paraíso",
+    "location": "San Jerónimo, Antioquia",
+    "phone": "+57 314 562 8843",
+    "whatsapp": "573145628843",
+    "story": "Somos una familia antioqueña que lleva más de 38 años cultivando sueños. Don Gustavo Arango fundó el vivero en 1985 con apenas 200 plántulas de mango y una mula para transportarlas. Hoy, junto a sus hijos y nietos, producimos más de 15.000 plántulas al año y somos referentes del occidente antioqueño. Cada árbol que sale de aquí lleva el cuidado y el amor de tres generaciones.",
+    "photo": "",
+    "foundedYear": 1985,
+    "products": [
+      { "name": "Plántula de Mango Tommy Atkins (injertado)", "description": "Variedad de alta producción, injertada sobre patrón resistente. Lista para siembra en 6 meses.", "price": 8500, "unit": "por plántula", "treeId": "mango" },
+      { "name": "Plántula de Mango Azúcar (injertado)", "description": "La preferida del mercado local por su dulzura. Planta de 30-40 cm lista para campo.", "price": 9000, "unit": "por plántula", "treeId": "mango" },
+      { "name": "Plántula de Aguacate Lorena (injertado)", "description": "Variedad de clima cálido, excelente para el occidente antioqueño. Fruto grande y cremoso.", "price": 12000, "unit": "por plántula", "treeId": "aguacate" },
+      { "name": "Plántula de Guanábana (selección clonal)", "description": "Clones de plantas madres con producción superior a 40 kg/árbol/año.", "price": 7500, "unit": "por plántula", "treeId": "guanabana" },
+      { "name": "Plántula de Naranja Valencia", "description": "Para producción de jugo. Injertada sobre portainjerto Citrumelo.", "price": 8000, "unit": "por plántula", "treeId": "citricos" },
+      { "name": "Paquete establecimiento (10 árboles + abono)", "description": "10 plántulas a elección + 50 kg de abono orgánico maduro + guía de siembra.", "price": 95000, "unit": "por paquete" }
+    ]
+  },
+  {
+    "id": "vivero-semillas-del-oriente",
+    "name": "Vivero Semillas del Oriente",
+    "location": "Rionegro, Antioquia",
+    "phone": "+57 301 478 2215",
+    "whatsapp": "573014782215",
+    "story": "Nacimos en 2003 con una misión clara: llevar el aguacate Hass de calidad certificada al oriente antioqueño. La ingeniera agrónoma Marcela Suárez, fundadora del vivero, viajó a Israel y California para traer las mejores técnicas de propagación por injerto. Hoy somos el vivero líder en aguacate Hass en el Oriente Antioqueño y también producimos cítricos y otras especies de clima fresco, adaptadas a los 2.000 metros sobre el nivel del mar.",
+    "photo": "",
+    "foundedYear": 2003,
+    "products": [
+      { "name": "Plántula Aguacate Hass certificada (injerto)", "description": "Injerto sobre patrón Zutano tolerante a Phytophthora. Certificado ICA. La mejor opción para Rionegro y el oriente.", "price": 18000, "unit": "por plántula", "treeId": "aguacate" },
+      { "name": "Plántula Aguacate Hass lote económico", "description": "Misma calidad genética, sin certificación ICA. Recomendada para huertos familiares.", "price": 13500, "unit": "por plántula", "treeId": "aguacate" },
+      { "name": "Plántula de Mandarina Arrayana", "description": "Variedad adaptada a 1.800-2.200 msnm. Fruto de excelente calidad y sabor.", "price": 9500, "unit": "por plántula", "treeId": "citricos" },
+      { "name": "Plántula de Limón Tahití", "description": "Sin semillas, alta demanda en el mercado local y nacional. Precoz y productivo.", "price": 8500, "unit": "por plántula", "treeId": "citricos" },
+      { "name": "Patrón para injerto de aguacate (Zutano)", "description": "Para productores que prefieren injertar ellos mismos. Planta de 40-50 cm.", "price": 4500, "unit": "por plántula", "treeId": "aguacate" },
+      { "name": "Kit inicio Hass (5 plantas + fertirriego básico)", "description": "5 plántulas Hass certificadas + sistema de goteo básico para 5 plantas + asesoría de establecimiento.", "price": 125000, "unit": "por kit" }
+    ]
+  },
+  {
+    "id": "vivero-tropical-nordeste",
+    "name": "Vivero Tropical Nordeste",
+    "location": "Yalí, Antioquia",
+    "phone": "+57 310 893 4567",
+    "whatsapp": "573108934567",
+    "story": "Somos el orgullo del nordeste antioqueño. La familia Bedoya lleva dos generaciones produciendo plántulas tropicales en las riberas del río Nus. Empezamos vendiendo plátano en la galería de Yalí y hoy exportamos material vegetal de cacao fino de aroma a viveros de todo el país. Nuestro orgullo son los clones de cacao CCN-51 y los Trinitario finos seleccionados en finca propia. Cada planta que vendemos ha sido probada en nuestras propias parcelas antes de llegar a sus manos.",
+    "photo": "",
+    "foundedYear": 1998,
+    "products": [
+      { "name": "Plántula de Cacao Trinitario (clon fino)", "description": "Material de alta calidad para cacao fino de aroma. Seleccionado en finca propia con más de 2 kg/árbol en producción.", "price": 9500, "unit": "por plántula", "treeId": "cacao" },
+      { "name": "Plántula de Cacao CCN-51 (alto rendimiento)", "description": "El clon más productivo del país. Para quienes buscan volumen y rentabilidad rápida.", "price": 7000, "unit": "por plántula", "treeId": "cacao" },
+      { "name": "Colino de Plátano Dominico-Hartón", "description": "Material sano, libre de Moko y Sigatoka. Colino de 30-40 cm listo para siembra.", "price": 3500, "unit": "por colino", "treeId": "platano" },
+      { "name": "Colino de Plátano Barraganete", "description": "Variedad de exportación. Racimos grandes, excelente para mercado de Medellín y Bogotá.", "price": 4000, "unit": "por colino", "treeId": "platano" },
+      { "name": "Plántula de Guanábana (material clonal)", "description": "Clones seleccionados de plantas con frutos superiores a 3 kg y baja fibrosidad.", "price": 6500, "unit": "por plántula", "treeId": "guanabana" },
+      { "name": "Paquete cacao arrancada (20 plantas)", "description": "20 plántulas de cacao Trinitario + abono orgánico de lombriz + tutorado + manual de cultivo.", "price": 175000, "unit": "por paquete" }
+    ]
+  },
+  {
+    "id": "vivero-raices-de-ferrer",
+    "name": "Vivero Raíces de Ferrer",
+    "location": "San Vicente de Ferrer, Antioquia",
+    "phone": "+57 316 234 7890",
+    "whatsapp": "573162347890",
+    "story": "En las alturas de San Vicente de Ferrer, a más de 2.000 metros, aprendimos a trabajar con lo que el clima nos permite. La señora Esperanza Montoya fundó este vivero en 2010 después de perder su cultivo de cítricos por una helada mal manejada. En lugar de rendirse, estudió con el SENA y el ICA, y hoy es la mayor productora de aguacate Hass y cítricos de altura del municipio. Su lema: 'El que siembra en altura, cosecha con paciencia y con calidad'.",
+    "photo": "",
+    "foundedYear": 2010,
+    "products": [
+      { "name": "Plántula Aguacate Hass altura (2.000-2.200 msnm)", "description": "Material seleccionado específicamente para las condiciones de San Vicente y el altiplano. Adaptado a noches frías.", "price": 16000, "unit": "por plántula", "treeId": "aguacate" },
+      { "name": "Plántula de Mandarina Oneco", "description": "Excelente para clima frío. Fruto de cáscara lisa y fácil pelado, muy apreciada en mercados locales.", "price": 9000, "unit": "por plántula", "treeId": "citricos" },
+      { "name": "Plántula de Naranja Navel Washington", "description": "La reina de los cítricos de altura. Sin semillas, dulce y jugosa. Adaptada a 1.800-2.300 msnm.", "price": 10000, "unit": "por plántula", "treeId": "citricos" },
+      { "name": "Plántula de Limón Tahití de altura", "description": "Injertada sobre patrón Citrumelo 4475, tolerante a temperaturas bajas y suelos ácidos.", "price": 8500, "unit": "por plántula", "treeId": "citricos" },
+      { "name": "Asesoría técnica en finca (1 día)", "description": "Visita técnica personalizada. Análisis de suelo, recomendación de especies y plan de fertilización.", "price": 80000, "unit": "por visita" },
+      { "name": "Kit inicio altura (6 árboles mixtos)", "description": "3 aguacate Hass + 2 mandarina Oneco + 1 naranja Navel + abono calcáreo + guía de manejo.", "price": 115000, "unit": "por kit" }
+    ]
+  }
+]

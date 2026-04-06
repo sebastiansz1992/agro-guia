@@ -15,6 +15,16 @@ export interface TreeStep {
 
 export type TreeCategory = 'frutal' | 'tropical' | 'cacao';
 
+export type ZoneId = 'san-vicente' | 'yali' | 'rionegro' | 'san-jeronimo';
+
+export interface Zone {
+  id: ZoneId;
+  name: string;
+  icon: string;
+  altitude: string;
+  climate: string;
+}
+
 export interface Tree {
   id: string;
   icon: string;
@@ -22,6 +32,7 @@ export interface Tree {
   category: TreeCategory;
   harvestTime: string;
   description: string;
+  zones: ZoneId[];
   steps: TreeStep[];
 }
 

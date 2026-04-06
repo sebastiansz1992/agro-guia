@@ -30,8 +30,28 @@
     <h2 class="section-title">Guías de cultivo</h2>
     <p class="section-subtitle">Selecciona el árbol que quieres cultivar y sigue la guía completa</p>
 
-    <!-- Filtros -->
-    <div class="filters" role="group" aria-label="Filtrar por categoría">
+    <!-- Filtro por zona -->
+    <fieldset class="zone-filter">
+      <span class="zone-filter__label">📍 Zona:</span>
+      <div class="zone-filter__pills">
+        @for (z of zones; track z.filterValue) {
+          <button
+            class="zone-btn"
+            [class.is-active]="activeZone() === z.filterValue"
+            (click)="setZone(z.filterValue)"
+            [title]="z.altitude ? z.altitude + ' · ' + z.climate : ''"
+          >
+            {{ z.icon }} {{ z.name }}
+            @if (z.altitude) {
+              <span class="zone-btn__alt">{{ z.altitude }}</span>
+            }
+          </button>
+        }
+      </div>
+    </fieldset>
+
+    <!-- Filtros por categoría -->
+    <fieldset class="filters">
       @for (f of filters; track f.value) {
         <button
           class="filter-btn"
@@ -39,7 +59,7 @@
           (click)="setFilter(f.value)"
         >{{ f.icon }} {{ f.label }}</button>
       }
-    </div>
+    </fieldset>
 
     <!-- Grid de árboles -->
     <div class="trees-grid">
@@ -47,7 +67,13 @@
         <app-tree-card [tree]="tree" />
       }
       @if (filteredTrees().length === 0 && trees().length > 0) {
-        <p class="trees-empty">No hay árboles en esta categoría.</p>
+        <p class="trees-empty">
+          @if (activeZone() !== 'todas') {
+            No hay guías disponibles para esta zona con el filtro seleccionado.
+          } @else {
+            No hay árboles en esta categoría.
+          }
+        </p>
       }
       @if (trees().length === 0) {
         <p class="trees-empty">Cargando guías...</p>

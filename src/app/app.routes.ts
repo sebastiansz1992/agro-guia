@@ -14,6 +14,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'viveros',
+    loadComponent: () =>
+      import('./features/viveros/viveros.component').then(
+        (m) => m.ViverosComponent
+      ),
+  },
+  {
     path: '**',
     redirectTo: '',
   },

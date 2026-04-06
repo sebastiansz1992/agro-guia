@@ -1,0 +1,100 @@
+<app-navbar />
+
+<!-- HERO -->
+<section class="viveros-hero">
+  <div class="viveros-hero__container">
+    <span class="viveros-hero__kicker">🌱 Directorio de viveros</span>
+    <h1 class="viveros-hero__title">Apoya a tus viveros locales</h1>
+    <p class="viveros-hero__subtitle">
+      Encuentra plántulas de calidad directamente de productores antioqueños.
+      Cada compra apoya a familias campesinas que cuidan la tierra.
+    </p>
+  </div>
+</section>
+
+<!-- LISTA DE VIVEROS -->
+<section class="viveros-section">
+  <div class="section-container">
+
+    @if (viveros().length === 0) {
+      <p class="viveros-loading">Cargando viveros...</p>
+    }
+
+    @for (vivero of viveros(); track vivero.id) {
+      <article class="vivero-card">
+
+        <!-- Cabecera: foto + identidad -->
+        <div class="vivero-card__header">
+          <div class="vivero-card__photo">
+            @if (vivero.photo) {
+              <img [src]="vivero.photo" [alt]="vivero.name" class="vivero-card__img" />
+            } @else {
+              <div class="vivero-card__placeholder">
+                <span>{{ getInitials(vivero.name) }}</span>
+              </div>
+            }
+          </div>
+
+          <div class="vivero-card__identity">
+            <h2 class="vivero-card__name">{{ vivero.name }}</h2>
+            <p class="vivero-card__location">📍 {{ vivero.location }}</p>
+            @if (vivero.foundedYear) {
+              <span class="vivero-card__badge">Desde {{ vivero.foundedYear }}</span>
+            }
+            <div class="vivero-card__contacts">
+              @if (vivero.phone) {
+                <a [href]="'tel:' + vivero.phone" class="contact-btn contact-btn--phone">
+                  📞 {{ vivero.phone }}
+                </a>
+              }
+              @if (vivero.whatsapp) {
+                <a [href]="formatWhatsApp(vivero.whatsapp)" target="_blank" rel="noopener" class="contact-btn contact-btn--whatsapp">
+                  💬 WhatsApp
+                </a>
+              }
+            </div>
+          </div>
+        </div>
+
+        <!-- Historia -->
+        <div class="vivero-card__story">
+          <h3 class="vivero-card__story-title">Nuestra historia</h3>
+          <p>{{ vivero.story }}</p>
+        </div>
+
+        <!-- Productos -->
+        <div class="vivero-card__products">
+          <h3 class="vivero-card__products-title">🛒 Catálogo de productos</h3>
+          <div class="products-grid">
+            @for (product of vivero.products; track product.name) {
+              <div class="product-item">
+                <div class="product-item__info">
+                  <span class="product-item__name">{{ product.name }}</span>
+                  <span class="product-item__desc">{{ product.description }}</span>
+                </div>
+                <div class="product-item__price">
+                  <span class="product-item__amount">
+                    {{ product.price | currency:'COP':'symbol-narrow':'1.0-0':'es-CO' }}
+                  </span>
+                  <span class="product-item__unit">{{ product.unit }}</span>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+
+      </article>
+    }
+
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="viveros-cta">
+  <div class="section-container">
+    <h2>¿Tienes un vivero?</h2>
+    <p>Escríbenos para aparecer en este directorio y llegar a más agricultores de Antioquia.</p>
+  </div>
+</section>
+
+<app-footer />

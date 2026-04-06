@@ -6,6 +6,7 @@
     "category": "frutal",
     "harvestTime": "3–5 años",
     "description": "El rey de las frutas tropicales. Resistente, productivo y amado en toda Colombia. Se adapta desde el Caribe hasta valles interandinos con temperaturas de 24–30 °C.",
+    "zones": ["san-jeronimo"],
     "steps": [
       {
         "id": 1,
@@ -94,6 +95,7 @@
     "category": "frutal",
     "harvestTime": "3–4 años",
     "description": "El \"oro verde\" de Colombia. La variedad Hass domina los mercados mundiales. Requiere clima fresco de montaña entre 1.500 y 2.200 msnm para máxima calidad.",
+    "zones": ["san-vicente", "yali", "rionegro", "san-jeronimo"],
     "steps": [
       {
         "id": 1,
@@ -182,6 +184,7 @@
     "category": "tropical",
     "harvestTime": "9–12 meses",
     "description": "Alimento base de millones de colombianos y venezolanos. De rápido retorno económico, el plátano Dominico-Hartón lidera la producción en el Eje Cafetero y los Llanos.",
+    "zones": ["yali", "san-jeronimo"],
     "steps": [
       {
         "id": 1,
@@ -269,6 +272,7 @@
     "category": "cacao",
     "harvestTime": "2–3 años",
     "description": "El cacao colombiano de alta calidad es reconocido mundialmente. Las variedades Trinitario y Fino de Aroma abren mercados gourmet. Cultivo de alto potencial en el Catatumbo y Urabá.",
+    "zones": ["san-jeronimo"],
     "steps": [
       {
         "id": 1,
@@ -357,6 +361,7 @@
     "category": "frutal",
     "harvestTime": "2–4 años",
     "description": "Naranja Valencia, limón Tahití y mandarina Arrayana. Los cítricos son el segundo cultivo frutal de Colombia. Versátiles para jugo o consumo fresco, con excelente mercado nacional.",
+    "zones": ["san-vicente", "yali", "rionegro", "san-jeronimo"],
     "steps": [
       {
         "id": 1,
@@ -444,6 +449,7 @@
     "category": "tropical",
     "harvestTime": "2–3 años",
     "description": "La guanábana (Annona muricata) es uno de los sabores más apreciados del trópico colombo-venezolano. Ideal para jugos, helados y pulpa congelada. Crece bien en zonas cálidas hasta 1.000 msnm.",
+    "zones": ["yali", "san-jeronimo"],
     "steps": [
       {
         "id": 1,

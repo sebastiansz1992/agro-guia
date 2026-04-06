@@ -3,9 +3,10 @@ import { TreesService } from '../../core/services/trees.service';
 import { NavbarComponent } from '../../shared/components/navbar/navbar.component';
 import { FooterComponent } from '../../shared/components/footer/footer.component';
 import { TreeCardComponent } from '../../shared/components/tree-card/tree-card.component';
-import { TreeCategory } from '../../core/models/tree.model';
+import { TreeCategory, ZoneId } from '../../core/models/tree.model';
 
 type FilterOption = 'todos' | TreeCategory;
+type ZoneFilter = 'todas' | ZoneId;
 
 @Component({
   selector: 'app-home',
@@ -15,16 +16,22 @@ type FilterOption = 'todos' | TreeCategory;
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
-  private treesService = inject(TreesService);
+  private readonly treesService = inject(TreesService);
 
   activeFilter = signal<FilterOption>('todos');
+  activeZone = signal<ZoneFilter>('todas');
 
   readonly trees = this.treesService.trees;
 
   readonly filteredTrees = computed(() => {
     const filter = this.activeFilter();
+    const zone = this.activeZone();
     const all = this.trees();
-    return filter === 'todos' ? all : all.filter((t) => t.category === filter);
+    let result = filter === 'todos' ? all : all.filter((t) => t.category === filter);
+    if (zone !== 'todas') {
+      result = result.filter((t) => t.zones.includes(zone));
+    }
+    return result;
   });
 
   readonly filters: { value: FilterOption; label: string; icon: string }[] = [
@@ -32,6 +39,14 @@ export class HomeComponent implements OnInit {
     { value: 'frutal',   label: 'Frutal',   icon: '🍊' },
     { value: 'tropical', label: 'Tropical', icon: '🍌' },
     { value: 'cacao',    label: 'Cacao',    icon: '🍫' },
+  ];
+
+  readonly zones: { filterValue: ZoneFilter; name: string; icon: string; altitude: string; climate: string }[] = [
+    { filterValue: 'todas',        name: 'Todas las zonas',       icon: '🗺️', altitude: '',            climate: '' },
+    { filterValue: 'san-vicente',  name: 'San Vicente de Ferrer', icon: '🏔️', altitude: '~2.050 msnm', climate: 'Frío-templado' },
+    { filterValue: 'yali',         name: 'Yalí',                  icon: '🌿', altitude: '~1.750 msnm', climate: 'Templado-cálido' },
+    { filterValue: 'rionegro',     name: 'Rionegro',              icon: '🌄', altitude: '~2.125 msnm', climate: 'Frío-templado' },
+    { filterValue: 'san-jeronimo', name: 'San Jerónimo',          icon: '☀️', altitude: '~1.000 msnm', climate: 'Cálido' },
   ];
 
   readonly howItWorks = [
@@ -46,5 +61,9 @@ export class HomeComponent implements OnInit {
 
   setFilter(filter: FilterOption): void {
     this.activeFilter.set(filter);
+  }
+
+  setZone(zone: ZoneFilter): void {
+    this.activeZone.set(zone);
   }
 }

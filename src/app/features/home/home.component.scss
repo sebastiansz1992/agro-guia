@@ -139,7 +139,72 @@
   font-size: 1rem;
 }
 
+/* ─── Zone filter ───────────────────────────────────────── */
+.zone-filter {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  &__label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding-top: 0.5rem;
+    white-space: nowrap;
+  }
+
+  &__pills {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+.zone-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 25px;
+  background: var(--color-card);
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+
+  &:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  &.is-active {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+
+    .zone-btn__alt { color: rgba(255,255,255,0.75); }
+  }
+
+  &__alt {
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    font-weight: 400;
+  }
+}
+
+/* ─── Category filters ──────────────────────────────────── */
 .filters {
+  border: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
