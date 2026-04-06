@@ -50,4 +50,4 @@ jobs:
             --paths "/*"
 
       - name: Deploy exitoso
-        run: echo "✅ AgroGuía Tropical desplegada exitosamente en S3"
+        run: echo "✅ Agro Guía Tropical desplegada exitosamente en S3"
