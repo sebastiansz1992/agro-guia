@@ -138,7 +138,7 @@ aws s3 sync dist/agro-guia/browser/ s3://NOMBRE-BUCKET --delete
 
 # Invalidar caché de CloudFront (tras un deploy)
 aws cloudfront create-invalidation \
-  --distribution-id EXXXXXXXXXX \
+  --distribution-id EXXXXXXXXX \
   --paths "/*"
 ```
 
