@@ -183,7 +183,7 @@
     "name": "Plátano",
     "category": "tropical",
     "harvestTime": "9–12 meses",
-    "description": "Alimento base de millones de colombianos y venezolanos. De rápido retorno económico, el plátano Dominico-Hartón lidera la producción en el Eje Cafetero y los Llanos.",
+    "description": "Alimento base de millones de colombianos. De rápido retorno económico, el plátano Dominico-Hartón lidera la producción en el Eje Cafetero y los Llanos.",
     "zones": ["yali", "san-jeronimo"],
     "steps": [
       {
