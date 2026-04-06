@@ -1,8 +1,19 @@
 .footer {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, #2d5510 100%);
   color: rgba(255, 255, 255, 0.9);
   padding: 2.5rem 1.25rem;
   margin-top: auto;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary-light), var(--color-accent), var(--color-primary-light));
+  }
 
   &__container {
     max-width: 1200px;
@@ -26,6 +37,14 @@
     color: #fff;
   }
 
+  &__logo-icon {
+    display: inline-block;
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: float 5s ease-in-out infinite;
+    }
+  }
+
   &__tagline {
     font-size: 0.85rem;
     opacity: 0.75;
@@ -42,9 +61,26 @@
       color: rgba(255, 255, 255, 0.8);
       text-decoration: none;
       font-size: 0.9rem;
-      transition: color 0.15s;
+      transition: color 0.2s, text-shadow 0.2s;
+      position: relative;
 
-      &:hover { color: #fff; }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.7);
+        transition: width 0.2s ease;
+      }
+
+      &:hover {
+        color: #fff;
+        text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+
+        &::after { width: 100%; }
+      }
     }
   }
 

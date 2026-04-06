@@ -25,6 +25,12 @@
   --color-surface:        #FAFAF7;
   --color-card:           #FFFFFF;
   --color-border:         rgba(59, 109, 17, 0.15);
+
+  /* Sombras reutilizables */
+  --shadow-card:        0 2px 12px rgba(59, 109, 17, 0.08);
+  --shadow-hover:       0 8px 28px rgba(59, 109, 17, 0.18);
+  --shadow-glow:        0 0 20px rgba(59, 109, 17, 0.4), 0 4px 14px rgba(59, 109, 17, 0.25);
+  --shadow-accent-glow: 0 0 20px rgba(186, 117, 23, 0.45), 0 4px 15px rgba(186, 117, 23, 0.3);
 }
 
 /* ─── Reset & Base ─────────────────────────────────────────────────────────── */
@@ -78,8 +84,31 @@ textarea, input, select {
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--color-primary-xlight); }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary-light);
+  background: linear-gradient(to bottom, var(--color-primary-light), var(--color-primary));
   border-radius: 4px;
+}
+
+/* ─── Global Animations ─────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-8px); }
+  }
+
+  @keyframes slideIn {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%      { opacity: 0.7; transform: scale(1.3); }
+  }
+
+  @keyframes shimmer-pass {
+    from { left: -100%; }
+    to   { left: 140%; }
+  }
 }
 
 /* ─── Focus visible ─────────────────────────────────────────────────────────── */

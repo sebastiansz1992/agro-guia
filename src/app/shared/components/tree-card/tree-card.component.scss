@@ -3,27 +3,65 @@
   flex-direction: column;
   background: var(--color-card);
   border-radius: 12px;
-  border-left: 5px solid var(--color-primary);
-  box-shadow: 0 2px 12px rgba(59, 109, 17, 0.08);
+  box-shadow: var(--shadow-card);
   text-decoration: none;
   color: var(--color-text);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
   overflow: hidden;
+  position: relative;
 
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(59, 109, 17, 0.16);
+  /* Shimmer on hover */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+    transform: skewX(-15deg);
+    pointer-events: none;
+    z-index: 1;
   }
 
-  &--tropical { border-left-color: #2e7d32; }
-  &--frutal   { border-left-color: var(--color-accent); }
-  &--cacao    { border-left-color: var(--color-soil); }
+  /* Gradient top stripe (replaces border-left) */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    border-radius: 12px 12px 0 0;
+  }
+
+  &--tropical::after { background: linear-gradient(90deg, #2e7d32, #1b5e20); }
+  &--frutal::after   { background: linear-gradient(90deg, var(--color-accent), #e6921d); }
+  &--cacao::after    { background: linear-gradient(90deg, var(--color-soil), #a0723f); }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover::before {
+      animation: shimmer-pass 0.65s ease forwards;
+    }
+  }
 
   &__icon {
     font-size: 3rem;
     text-align: center;
     padding: 1.25rem 1rem 0.5rem;
     line-height: 1;
+
+    @media (prefers-reduced-motion: no-preference) {
+      .tree-card:hover & {
+        animation: float 2.5s ease-in-out infinite;
+      }
+    }
   }
 
   &__body {
@@ -93,8 +131,16 @@
 
   &__cta {
     font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--color-primary);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     white-space: nowrap;
+    transition: filter 0.2s;
+
+    .tree-card:hover & {
+      filter: brightness(1.15);
+    }
   }
 }

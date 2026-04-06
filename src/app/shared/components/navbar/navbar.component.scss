@@ -1,6 +1,7 @@
 .navbar {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -26,6 +27,11 @@
   &__logo-icon {
     font-size: 1.6rem;
     line-height: 1;
+
+    @media (prefers-reduced-motion: no-preference) {
+      display: inline-block;
+      animation: float 4s ease-in-out infinite;
+    }
   }
 
   &__logo-text {
@@ -55,11 +61,29 @@
     font-size: 0.95rem;
     font-weight: 500;
     transition: background 0.15s, color 0.15s;
+    position: relative;
 
-    &:hover,
+    &:hover { background: rgba(0, 0, 0, 0.15); color: #fff; }
+
     &.is-active {
-      background: rgba(255, 255, 255, 0.18);
+      background: rgba(0, 0, 0, 0.2);
       color: #fff;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+
+        @media (prefers-reduced-motion: no-preference) {
+          animation: pulse-dot 1.8s ease-in-out infinite;
+        }
+      }
     }
   }
 

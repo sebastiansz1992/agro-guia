@@ -1,6 +1,6 @@
 /* ─── Hero ─────────────────────────────────────────────── */
 .viveros-hero {
-  background: linear-gradient(135deg, var(--color-soil) 0%, #a0723f 100%);
+  background: linear-gradient(135deg, var(--color-soil) 0%, #7a5530 100%);
   color: #fff;
   padding: 3.5rem 0;
 
@@ -63,17 +63,57 @@
 .vivero-card {
   background: var(--color-card);
   border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(59, 109, 17, 0.08);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
   margin-bottom: 2.5rem;
+  position: relative;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), transparent);
+    transform: skewX(-15deg);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover::before {
+      animation: shimmer-pass 0.7s ease forwards;
+    }
+  }
 
   &__header {
     display: flex;
     gap: 1.75rem;
     padding: 2rem;
-    background: linear-gradient(to right, #f9f6f0, var(--color-card));
-    border-bottom: 1px solid var(--color-border);
+    background: linear-gradient(135deg, rgba(235, 243, 226, 0.7), rgba(255, 255, 255, 0.95));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(59, 109, 17, 0.1);
     align-items: flex-start;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+      border-radius: 18px 18px 0 0;
+    }
   }
 
   &__photo {
@@ -180,20 +220,24 @@
   font-size: 0.82rem;
   font-weight: 600;
   text-decoration: none;
-  transition: opacity 0.15s, transform 0.15s;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 
-  &:hover { opacity: 0.85; transform: translateY(-1px); }
+  &:hover { transform: translateY(-2px); }
 
   &--phone {
     background: var(--color-primary-xlight);
     color: var(--color-primary);
     border: 1px solid rgba(59, 109, 17, 0.2);
+
+    &:hover { box-shadow: 0 0 16px rgba(59, 109, 17, 0.3), 0 4px 10px rgba(59, 109, 17, 0.2); }
   }
 
   &--whatsapp {
     background: #e8f5e9;
     color: #2e7d32;
     border: 1px solid rgba(46, 125, 50, 0.2);
+
+    &:hover { box-shadow: 0 0 16px rgba(46, 125, 50, 0.35), 0 4px 10px rgba(46, 125, 50, 0.2); }
   }
 }
 
@@ -251,7 +295,10 @@
   &__amount {
     font-size: 1rem;
     font-weight: 700;
-    color: var(--color-accent);
+    background: linear-gradient(135deg, var(--color-accent), #e6921d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   &__unit {
